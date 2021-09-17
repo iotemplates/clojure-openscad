@@ -4,11 +4,15 @@
 
 (def design
   (union
+   (sphere 70)
    (cube 100 100 100)
-   (sphere 10)
-   (cylinder 10 150)))
+   (cylinder 30 150))
+
+(defn generate [& obj]
+  "Generate the openscad file."
+  (spit "openscad-clojure.scad" (write-scad (or obj design))))
 
 (defn -main
-  "Spit the design in openscad format"
   [& args]
-  (spit "openscad-clojure.scad" (write-scad design)))
+  "Spit the design in openscad format."
+  (generate))

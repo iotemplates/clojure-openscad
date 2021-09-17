@@ -27,12 +27,15 @@
 
 *** Using Emacs
 
-    For emacs users it will be easier to just use cider.
+    Most emacs users will want to use cider and evaluate the clojure code directly from the source.
+    
     The steps are:
 
     - Use command `cider-jack-in` to start the repl.
     - Use command `cider-eval-buffer` to evaluate the buffer.
-    - Select the main method and call `cide-eval-region`.
+    - Go to the end og `(generate) in the main function and call `cide-eval-last-sexp`.
+
+    This will update the design and regenerate the scad file.
 
 ****  Emacs setup for clojure
 
