@@ -6,6 +6,7 @@
             :year 2020
             :key "apache-2.0"}
   :dependencies [[org.clojure/clojure "1.10.1"] [scad-clj "0.5.3"]]
+  :plugins [[lein-auto "0.1.3"]]
   :main ^:skip-aot openscad-clojure.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
