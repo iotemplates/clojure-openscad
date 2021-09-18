@@ -1,5 +1,9 @@
 * Openscad Clojure
 
+  
+[[../../actions/workflows/build.yml/badge.svg]]
+
+
   This is a simple clojure project that is used for generating openscad designs.
   It relies on https://github.com/farrellm/scad-clj and is inspired by http://adereth.github.io/blog/2014/04/09/3d-printing-with-clojure/.
 
