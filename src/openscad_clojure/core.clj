@@ -1,4 +1,4 @@
-(ns openscad-clojure.core
+(ns clojure-openscad.core
  (:use [scad-clj.scad])
  (:use [scad-clj.model]))
 
@@ -10,7 +10,7 @@
 
 (defn generate [& obj]
   "Generate the openscad file."
-  (spit "openscad-clojure.scad" (write-scad (or obj design))))
+  (spit "clojure-openscad.scad" (write-scad (or obj design))))
 
 (defn -main
   [& args]

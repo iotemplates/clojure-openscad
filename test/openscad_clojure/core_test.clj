@@ -1,6 +1,6 @@
-(ns openscad-clojure.core-test
+(ns clojure-openscad.core-test
   (:require [clojure.test :refer :all]
-            [openscad-clojure.core :refer :all]))
+            [clojure-openscad.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
