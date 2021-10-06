@@ -1,12 +1,13 @@
 (ns clojure-openscad.core
  (:use [scad-clj.scad])
- (:use [scad-clj.model]))
+ (:use [scad-clj.model])
+ (:gen-class))
 
 (def design
   (union
    (sphere 70)
    (cube 100 100 100)
-   (cylinder 30 150))
+   (cylinder 30 150)))
 
 (defn generate [& obj]
   "Generate the openscad file."
